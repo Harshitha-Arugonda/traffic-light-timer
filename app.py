@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 import pandas as pd
 from sklearn.linear_model import LinearRegression
-from sklearn.svm import SVC # "Support Vector Classifier"
 def reg(file,impacts,outcome,inps):
     data = pd.read_csv(file)
     X = data[impacts]
